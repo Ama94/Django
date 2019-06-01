@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+</head>
+<body>
+        {% for review in reviews_list %}
+        <div>
+            {{ review.product_id }} - {{ review.content }}
+        </div>
+    {% endfor %}
+</body>
+</html>
